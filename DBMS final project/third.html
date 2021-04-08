@@ -1,0 +1,422 @@
+<html>
+	<head>
+		<title>home page</title>
+		<link rel="icon" type="image/png" href="file:///Users/smrithi/Desktop/DBMS%20final%20project/leaf%20logo.png">
+		<style>
+			.logo{
+				padding-top:5px;
+				padding-bottom: 5px;
+				position:absolute;
+				top:0;
+				left:8;
+			}
+			.aboutus{
+				padding-right:50px;
+				position:absolute;
+				opacity:0.8;
+				bottom:10;
+			}
+			.haystack{
+  				padding-top:5px;
+				position:absolute;
+				bottom:25;
+				left:17;
+			}
+
+			.image1 {
+  				opacity: 1;
+  				display: block;
+  				transition: .5s ease;
+  				backface-visibility: hidden;
+			}
+
+			.middle1 {
+  				transition: .5s ease;
+  				opacity: 0;
+  				position: absolute;
+  				top: 50%;
+  				left: 50%;
+  				transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+  				text-align: center;
+			}
+
+			.haystack:hover .image1 {
+  				opacity: 0.3;
+			}
+
+			.haystack:hover .middle1 {
+  				opacity: 1;
+			}
+
+			.text1 {
+  				background-color: #4CAF50;
+  				color: white;
+  				font-size: 16px;
+  				padding: 16px 32px;
+			}
+			.cow{
+  				padding-top:5px;
+				position:absolute;
+				bottom:25;
+				left:200;
+			}
+
+			.image2 {
+  				opacity: 1;
+  				display: block;
+  				transition: .5s ease;
+  				backface-visibility: hidden;
+			}
+
+			.middle2 {
+  				transition: .5s ease;
+  				opacity: 0;
+  				position: absolute;
+  				top: 50%;
+  				left: 50%;
+  				transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+  				text-align: center;
+			}
+
+			.cow:hover .image2 {
+  				opacity: 0.3;
+			}
+
+			.cow:hover .middle2{
+  				opacity: 1;
+			}
+
+			.text2{
+  				background-color: #4CAF50;
+  				color: white;
+  				font-size: 16px;
+  				padding: 16px 32px;
+			}
+			.seeds{
+  				padding-top:5px;
+				position:absolute;
+				bottom:25;
+				left:550;	
+			}
+
+			.image3{
+  				opacity: 1;
+  				display: block;
+  				transition: .5s ease;
+  				backface-visibility: hidden;
+			}
+
+			.middle3{
+  				transition: .5s ease;
+  				opacity: 0;
+  				position: absolute;
+  				top: 50%;
+  				left: 50%;
+  				transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+  				text-align: center;
+			}
+
+			.seeds:hover .image3 {
+  				opacity: 0.3;
+			}
+
+			.seeds:hover .middle3{
+  				opacity: 1;
+			}
+
+			.text3{
+  				background-color: #4CAF50;
+  				color: white;
+  				font-size: 16px;
+  				padding: 16px 32px;
+			}
+			.scarecrow{
+  				padding-top:5px;
+				position:absolute;
+				bottom:25;
+				right:12;
+			}
+
+			.image4{
+  				opacity: 1;
+  				display: block;
+  				transition: .5s ease;
+  				backface-visibility: hidden;
+			}
+
+			.middle4{
+  				transition: .5s ease;
+  				opacity: 0;
+  				position: absolute;
+  				top: 50%;
+  				left: 50%;
+  				transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+  				text-align: center;
+			}
+
+			.scarecrow:hover .image4{
+  				opacity: 0.3;
+			}
+
+			.scarecrow:hover .middle4{
+  				opacity: 1;
+			}
+
+			.text4{
+  				background-color: #4CAF50;
+  				color: white;
+  				font-size: 16px;
+  				padding: 16px 32px;
+			}
+			.fertilisers{
+  				padding-top:5px;
+				position:absolute;
+				bottom:25;
+				left:400;	
+			}
+
+			.image5{
+  				opacity: 1;
+  				display: block;
+  				transition: .5s ease;
+  				backface-visibility: hidden;
+			}
+
+			.middle5{
+  				transition: .5s ease;
+  				opacity: 0;
+  				position: absolute;
+  				top: 50%;
+  				left: 50%;
+  				transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+  				text-align: center;
+			}
+
+			.fertilisers:hover .image5 {
+  				opacity: 0.3;
+			}
+
+			.fertilisers:hover .middle5{
+  				opacity: 1;
+			}
+
+			.text5{
+  				background-color: #4CAF50;
+  				color: white;
+  				font-size: 16px;
+  				padding: 16px 32px;
+			}
+			.tools{
+  				padding-top:5px;
+				position:absolute;
+				bottom:25;
+				left:800;	
+			}
+
+			.image6{
+  				opacity: 1;
+  				display: block;
+  				transition: .5s ease;
+  				backface-visibility: hidden;
+			}
+
+			.middle6{
+  				transition: .5s ease;
+  				opacity: 0;
+  				position: absolute;
+  				top: 50%;
+  				left: 50%;
+  				transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+  				text-align: center;
+			}
+
+			.tools:hover .image6{
+  				opacity: 0.3;
+			}
+
+			.tools:hover .middle6{
+  				opacity: 1;
+			}
+
+			.text6{
+  				background-color: #4CAF50;
+  				color: white;
+  				font-size: 16px;
+  				padding: 16px 32px;
+			}
+			.saplings{
+  				padding-top:5px;
+				position:absolute;
+				bottom:25;
+				right:150;		
+			}
+
+			.image7{
+  				opacity: 1;
+  				display: block;
+  				transition: .5s ease;
+  				backface-visibility: hidden;
+			}
+
+			.middle7{
+  				transition: .5s ease;
+  				opacity: 0;
+  				position: absolute;
+  				top: 50%;
+  				left: 50%;
+  				transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+  				text-align: center;
+			}
+
+			.saplings:hover .image7{
+  				opacity: 0.3;
+			}
+
+			.saplings:hover .middle7{
+  				opacity: 1;
+			}
+
+			.text7{
+  				background-color: #4CAF50;
+  				color: white;
+  				font-size: 16px;
+  				padding: 16px 32px;
+			}
+			.pumps{
+  				padding-top:5px;
+				position:absolute;
+				bottom:25;
+				right:310;		
+			}
+
+			.image8{
+  				opacity: 1;
+  				display: block;
+  				transition: .5s ease;
+  				backface-visibility: hidden;
+			}
+
+			.middle8{
+  				transition: .5s ease;
+  				opacity: 0;
+  				position: absolute;
+  				top: 50%;
+  				left: 50%;
+  				transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+  				text-align: center;
+			}
+
+			.pumps:hover .image8{
+  				opacity: 0.3;
+			}
+
+			.pumps:hover .middle8{
+  				opacity: 1;
+			}
+
+			.text8{
+  				background-color: #4CAF50;
+  				color: white;
+  				font-size: 16px;
+  				padding: 16px 32px;
+			}
+			.marquee{
+				height: 50px;
+				overflow: hidden;
+				position: relative;
+				top:40;
+				background-color:black;
+				height:50;
+			}
+			.marquee h1{
+				font-size: 20px;
+				font-weight: 900;
+				color:white;
+				font:garamond;
+				position: relative;
+				width:100%;
+				height:100%;
+				line-height: 50px;
+				text-align: top;
+				transform:translateX(100%);
+				animation: cssmarquee 15s linear infinite;
+			}
+			@keyframes cssmarquee {
+				0% {
+				transform: translateX(100%);
+			}
+				100% {
+				transform: translateX(-100%);
+			}	
+			}
+		</style>
+	</head>
+	<body>
+		<div class="marquee">
+			<h1>THE CUSTOMERS WHO BUY ITEMS WORTH 2000 RUPEES OR MORE WILL GET A FREE SAPLING OF YOUR CHOICE!!!!</h1>️
+		</div>
+		<div class='logo'>
+			<img src="file:///Users/smrithi/Desktop/DBMS%20final%20project/WhatsApp%20Image%202021-03-01%20at%2010.03.58%20PM.jpeg" width=250 height=40>
+		</div>
+		<br>
+		<div class="aboutus">
+			<img src="file:///Users/smrithi/Desktop/DBMS%20final%20project/oak-tree-sunset-iStock-477164218.jpg" width=1425 height=710>
+		</div>
+		<div class="haystack">
+  			<img src="file:///Users/smrithi/Desktop/DBMS%20final%20project/farming-dry-hay-bale-haycock-isolated-white-agricultural-rural-yellow-straw-haystack-farm-agriculture-eco-natural-cartoon-189697783.png" alt="haystack" class="image1" width=150 height=85>
+  			<div class="middle1">
+    			<div class="text1">Fodder</div>
+  			</div>
+		</div>
+		<div class="cow">
+  			<img src="file:///Users/smrithi/Desktop/DBMS%20final%20project/images-2.png" alt="diary products" class="image2" width=150 height=85>
+  			<div class="middle2">
+    			<div class="text2">Diary Products</div>
+  			</div>
+		</div>
+		<div class="seeds">
+  			<img src="file:///Users/smrithi/Desktop/DBMS%20final%20project/a-pack-plant-seeds-vector-2335908.png" alt="seeds" class="image3" width=125 height=100>
+  			<div class="middle3">
+    			<div class="text3">Seeds</div>
+  			</div>
+		</div>
+		<div class="scarecrow">
+  			<img src="file:///Users/smrithi/Desktop/DBMS%20final%20project/images%20copy.png" width=125 height=110 alt="decorative products" class="image4">
+  			<div class="middle4">
+    			<div class="text4">Decorative Products</div>
+  			</div>
+		</div>
+		<div class="fertilisers">
+  			<img src="file:///Users/smrithi/Desktop/DBMS%20final%20project/Unknown.png" width=100 height=100 alt="fertilisers" class="image5">
+  			<div class="middle5">
+    			<div class="text5">Fertilisers</div>
+  			</div>
+		</div>
+		<div class="tools">
+  			<img src="file:///Users/smrithi/Desktop/DBMS%20final%20project/578265-tractor75.gif" width=165 height=85 alt="tools" class="image6">
+  			<div class="middle6">
+    			<div class="text6">Tools</div>
+  			</div>
+		</div>
+		<div class="saplings">
+  			<img src="file:///Users/smrithi/Desktop/DBMS%20final%20project/1313286119265416372icon-seedling-md.png" width=150 height=85 alt="saplings" class="image7">
+  			<div class="middle7">
+    			<div class="text7">Saplings</div>
+  			</div>
+		</div>
+		<div class="pumps">
+  			<img src="file:///Users/smrithi/Desktop/DBMS%20final%20project/stock-vector-water-stream-water-pump-design-isolated-on-white-background-1225156585.png" width=150 height=85 alt="pumps" class="image8">
+  			<div class="middle8">
+    			<div class="text8">Pumps</div>
+  			</div>
+		</div>
+	</body>
+</html>
