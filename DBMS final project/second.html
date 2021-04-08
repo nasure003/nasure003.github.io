@@ -4,7 +4,269 @@
 	<meta charset="utf-8">
 	<title>About Us-Nasure</title>
 	<link rel="icon" type="image/png" href="https://raw.githubusercontent.com/nasure003/nasure003.github.io/main/DBMS%20final%20project/leaf%20logo.png">
-	<link rel="stylesheet" type="text/css" href="https://github.com/nasure003/nasure003.github.io/blob/main/DBMS%20final%20project/second.css">
+	<style>
+		#heads{
+	font-size:115%;
+  background-color:#cfff91;
+	color:black;
+  height:150;
+	text-align: center;
+	font-family:New Century Schoolbook, TeX Gyre Schola, serif;
+	font-style: oblique;
+	text-shadow: 2px 2px 5px white;
+  text-align:center;
+}
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: red;
+  background-color:black;
+  text-decoration: none;
+}
+a:hover {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: pink;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.img1{
+  padding-left: 20px;
+  float: left;
+  position: absolute;
+  opacity: 1;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  top:55%;
+  left: 1%;
+  opacity: 0.9;
+}
+.img2{
+  padding-left: 20px;
+  float: left;
+  opacity: 1;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  position: absolute;
+  top:55%;
+  left: 31.5%;
+  opacity: 0.9;
+}
+.img3{
+   padding-left: 20px;
+  float: left;
+  opacity: 1;
+  transition: 0.5s ease;
+  position: absolute;
+  top: 55%;
+  left: 65%;
+}
+.img4{
+   padding-left: 20px;
+  float: left;
+  opacity: 1;
+  transition: 0.5s ease;
+  position: absolute;
+  top:110%;
+  left: 1%
+}
+.img5{
+   padding-left: 20px;
+  float: left;
+  opacity: 1;
+  transition: 0.5s ease;
+  position: absolute;
+  top: 110%;
+  left: 32%;
+}
+.img6{
+   padding-left: 20px;
+  float: left;
+  opacity: 1;
+  transition: 0.5s ease;
+  position: absolute;
+  top:110%;
+  left: 65%
+}
+#text1{
+   position: absolute; 
+   color:#ffffff ;
+   font-family:Garamond,serif;
+   opacity: 0;
+   background-color:black;
+   transition: 0.5s ease;
+   font-size: 100%;
+   font-style: bold;
+   font-weight: 900;
+   top: -3%; 
+   left: 5%;
+   text-align: justify;
+}
+#text2{
+   position: absolute; 
+   color:#ffffff ;
+   font-family:Garamond,serif;
+   opacity: 0;
+   background-color:black;
+   transition: 0.5s ease;
+   font-size: 100%;
+   font-style: bold;
+   font-weight: 900;
+   top: 0%; 
+   left: 5%
+}
+#text3{
+  position: absolute; 
+   color:white;
+   opacity: 0;
+   transition: 0.5s ease;
+   background-color:black;
+   font-family:Garamond,serif;
+   font-size: 100%;
+   font-style: bold;
+   font-weight: 900;
+   top: 1%; 
+   left: 5%;
+}
+#text4{
+   position: absolute; 
+   color:white;
+   background-color: black;
+   opacity: 0;
+   transition: 0.5s ease;
+   font-family:Garamond,serif;
+   font-size: 100%;
+   font-style: bold;
+   font-weight: 900;
+   top: -5%; 
+   left: 5%;
+}
+#text5{
+   position: absolute; 
+   color:white;
+   opacity: 0;
+   transition: 0.5s ease;
+   background-color: black;
+   font-family:Garamond,serif;
+   font-size: 100%;
+   font-style: bold;
+   font-weight: 900;
+   top: 10%; 
+   left: 5%;
+}
+#text6{
+   position: absolute; 
+   color:white;
+   font-family:Garamond,serif;
+   background-color: black;
+   opacity: 0;
+   transition: 0.5s ease;
+   font-size: 105%;
+   font-style: bold;
+   font-weight: 900;
+   top: -3%; 
+   left: 5%;
+   right:2.8%
+}
+.p1:hover .img1{
+    opacity: 0.9;
+}
+.p2:hover .img2{
+    opacity: 0.9;
+}
+.p3:hover .img3{
+    opacity: 0.9;
+}
+.p4:hover .img4{
+    opacity: 0.9;
+}
+.p5:hover .img5{
+    opacity: 0.9;
+}
+.p6:hover .img6{
+    opacity: 0.9;
+}
+
+.p1:hover #text1{
+  opacity: 1;
+}
+.p2:hover #text2{
+  opacity:2;
+}
+.p3:hover #text3{
+  opacity: 1;
+}
+.p4:hover #text4{
+  opacity: 1;
+}
+.p5:hover #text5{
+  opacity: 1;
+}
+.p6:hover #text6{
+  opacity: 2;
+}
+body{
+	background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+.bg{ 
+   position: relative;
+   opacity: 0.6;
+   top:0;
+}
+
+#text{ 
+   position: absolute; 
+   color:black;
+   font-family:Lucida Sans Unicode ;
+   font-size: 350%;
+   font-style: normal;
+   top:170%;
+   left:20%;
+   font-weight: 100;
+   text-transform: uppercase;
+
+}
+
+.abouts{
+	font-size:175%;
+	font-family: Garmond,serif;
+  color:black;
+  background-color:#ccff99;
+  height:50;
+	font-weight: 600;
+	font-style: oblique;
+	font-weight: 70%;
+	text-align: center;
+	line-height: 150%;
+}
+
+button{
+  border: none;
+  color: black;
+  font-weight: 600;
+  padding: 15px 32px;
+  background-color:yellow;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  margin: 4px 2px;
+  cursor: pointer;
+  position: absolute;
+  top: 165%;
+  left:29%;
+}
+	</style>
 </head>
 <body>
 		<div id="heads">
